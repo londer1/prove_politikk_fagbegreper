@@ -9,7 +9,8 @@ questions = [
             "b": "Makt er konsentrert hos én person eller en liten gruppe.",
             "c": "Myndighetene styrer uten at folket har innflytelse."
         },
-        "answer": "a"
+        "answer": "a",
+        "explanation": "Demokrati betyr at folk kan være med på å bestemme viktige saker, for eksempel gjennom valg."
     },
     {
         "question": "Hva beskriver et diktatur?",
@@ -18,7 +19,8 @@ questions = [
             "b": "Styresett der én person eller en liten gruppe har total makt.",
             "c": "Styresett med et flerpartisystem og frie valg."
         },
-        "answer": "b"
+        "answer": "b",
+        "explanation": "I et diktatur er det en person eller en liten gruppe som har all makten, og folk kan ikke bestemme."
     },
     {
         "question": "Hva er folkesuverenitet?",
@@ -27,7 +29,8 @@ questions = [
             "b": "Prinsippet om at en liten gruppe styrer på vegne av folket.",
             "c": "Prinsippet om at folket er underlagt statens lovgivning."
         },
-        "answer": "a"
+        "answer": "a",
+        "explanation": "Folkesuverenitet betyr at folk bestemmer hvem som skal ha makt, for eksempel gjennom valg."
     },
     {
         "question": "Hva er maktfordelingsprinsippet?",
@@ -36,7 +39,8 @@ questions = [
             "b": "Prinsippet om at en leder skal ha absolutt makt over staten.",
             "c": "Prinsippet om at makten kun skal være i hendene på folket."
         },
-        "answer": "a"
+        "answer": "a",
+        "explanation": "Maktfordeling betyr at makten deles mellom regjeringen, parlamentet og domstolene for å unngå at noen får for mye makt."
     },
     {
         "question": "Hva er en ideologi?",
@@ -45,7 +49,8 @@ questions = [
             "b": "Et sett med ideer og verdier for hvordan samfunnet bør organiseres.",
             "c": "Et sosialt nettverk som forener ulike grupper."
         },
-        "answer": "b"
+        "answer": "b",
+        "explanation": "En ideologi handler om hvilke ideer man mener er best for hvordan samfunnet skal være."
     },
     {
         "question": "Hva er kjernen i sosialisme?",
@@ -54,7 +59,8 @@ questions = [
             "b": "At samfunnet skal styres av en sterk, sentralisert leder.",
             "c": "At individuell frihet og minimal statlig innblanding er viktig."
         },
-        "answer": "a"
+        "answer": "a",
+        "explanation": "Sosialisme mener at ressursene bør deles mer rettferdig for å hjelpe folk som har det vanskelig."
     },
     {
         "question": "Hva kjennetegner liberalisme?",
@@ -63,7 +69,8 @@ questions = [
             "b": "Fokus på kollektivt ansvar og staten som sentral aktør.",
             "c": "Fokus på tradisjonelle verdier og skepsis til endring."
         },
-        "answer": "a"
+        "answer": "a",
+        "explanation": "Liberalisme handler om å gi folk mer frihet og mindre styring fra staten."
     },
     {
         "question": "Hva er et ekkokammer?",
@@ -72,7 +79,8 @@ questions = [
             "b": "Et miljø hvor folk kun hører synspunkter som bekrefter deres egne meninger.",
             "c": "Et miljø hvor folk deler sine erfaringer uten å bli utfordret."
         },
-        "answer": "b"
+        "answer": "b",
+        "explanation": "Et ekkokammer kan for eksempel være når du bare ser TikTok-videoer som er enig med ditt syn, og aldri blir utfordret til å tenke på andre synspunkter."
     }
 ]
 
@@ -82,7 +90,10 @@ def ask_question(q):
     for key, value in q["options"].items():
         print(f"{key}: {value}")
     answer = input("Svar (a, b, eller c): ").lower()
-    return answer == q["answer"]
+    if answer != q["answer"]:
+        print(f"Feil. Riktig svar er: {q['answer']}. {q['explanation']}\n")
+        return False
+    return True
 
 # Øvefunksjon
 def start_quiz():
@@ -95,8 +106,6 @@ def start_quiz():
         if ask_question(q):
             print("Riktig!\n")
             score += 1
-        else:
-            print("Feil.\n")
 
     print(f"Du fikk {score} av {total} riktige svar!")
 
