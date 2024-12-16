@@ -81,6 +81,67 @@ questions = [
         },
         "answer": "b",
         "explanation": "Et ekkokammer kan for eksempel være når du bare ser TikTok-videoer som er enig med ditt syn, og aldri blir utfordret til å tenke på andre synspunkter."
+    },
+    # Nye spørsmål
+    {
+        "question": "Hva kjennetegner en rettsstat?",
+        "options": {
+            "a": "Myndighetene kan handle vilkårlig uten rettslig kontroll.",
+            "b": "Alle er underlagt loven, og ingen står over den.",
+            "c": "Retten til å delta i valg er begrenset."
+        },
+        "answer": "b",
+        "explanation": "I en rettsstat er ingen over loven, og rettferdighet og likebehandling er sentralt."
+    },
+    {
+        "question": "Hva betyr pluralisme i et samfunn?",
+        "options": {
+            "a": "At kun én ideologi er tillatt.",
+            "b": "At ulike synspunkter kan sameksistere og bli hørt.",
+            "c": "At folk bare får høre én type informasjon."
+        },
+        "answer": "b",
+        "explanation": "Pluralisme innebærer at samfunnet er åpent for forskjellige synspunkter og ideer."
+    },
+    {
+        "question": "Hva er menneskerettigheter?",
+        "options": {
+            "a": "Rettigheter som bare gjelder for enkelte grupper i samfunnet.",
+            "b": "Rettigheter som gjelder for alle mennesker, uavhengig av nasjonalitet eller bakgrunn.",
+            "c": "Rettigheter som kan tas bort av myndighetene."
+        },
+        "answer": "b",
+        "explanation": "Menneskerettigheter er grunnleggende rettigheter som alle mennesker har rett til."
+    },
+    {
+        "question": "Hva innebærer medborgerskap?",
+        "options": {
+            "a": "At man har plikter som å betale skatt, men ikke rettigheter som stemmerett.",
+            "b": "At man har både rettigheter som stemmerett og plikter i samfunnet.",
+            "c": "At man kun har rettigheter og ingen plikter."
+        },
+        "answer": "b",
+        "explanation": "Medborgerskap innebærer både rettigheter og plikter, som for eksempel stemmerett og ansvar for samfunnet."
+    },
+    {
+        "question": "Hva betyr mistillit i et politisk system?",
+        "options": {
+            "a": "At folk har tillit til myndighetene.",
+            "b": "At folk mister tilliten til regjeringen og dens evne til å lede.",
+            "c": "At folk ikke har noen meninger om myndighetene."
+        },
+        "answer": "b",
+        "explanation": "Mistillit skjer når folk mister tilliten til regjeringen, og det kan føre til at de mister makten."
+    },
+    {
+        "question": "Hva kjennetegner konservatisme?",
+        "options": {
+            "a": "En tro på tradisjonelle verdier og motstand mot raske endringer.",
+            "b": "Fokus på individuell frihet og minimal statlig innblanding.",
+            "c": "Tro på et klasseløst samfunn og rettferdig fordeling av rikdom."
+        },
+        "answer": "a",
+        "explanation": "Konservatisme handler om å bevare tradisjonelle verdier og motsette seg raske endringer i samfunnet."
     }
 ]
 
